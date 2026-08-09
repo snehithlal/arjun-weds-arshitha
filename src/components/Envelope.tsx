@@ -98,28 +98,28 @@ function WaxSeal() {
     <svg viewBox="0 0 100 100" width="100%" height="100%" aria-hidden style={{ overflow: 'visible' }}>
       <defs>
         <radialGradient id="waxFill" cx="36%" cy="30%" r="78%">
-          <stop offset="0%" stopColor="#93374A" />
-          <stop offset="48%" stopColor="#6E1F2B" />
-          <stop offset="100%" stopColor="#45101B" />
+          <stop offset="0%" stopColor="#1C685F" />
+          <stop offset="48%" stopColor="#0D3B36" />
+          <stop offset="100%" stopColor="#051C1A" />
         </radialGradient>
         <radialGradient id="waxRim" cx="50%" cy="50%" r="50%">
           <stop offset="72%" stopColor="rgba(0,0,0,0)" />
-          <stop offset="100%" stopColor="rgba(38,8,14,0.55)" />
+          <stop offset="100%" stopColor="rgba(4,20,18,0.55)" />
         </radialGradient>
       </defs>
 
-      <ellipse cx="18" cy="76" rx="7" ry="5" fill="#5C1723" opacity="0.9" />
-      <ellipse cx="84" cy="40" rx="6" ry="4.4" fill="#5C1723" opacity="0.85" />
+      <ellipse cx="18" cy="76" rx="7" ry="5" fill="#0A2C29" opacity="0.9" />
+      <ellipse cx="84" cy="40" rx="6" ry="4.4" fill="#0A2C29" opacity="0.85" />
 
       <path d={WAX_BLOB} fill="url(#waxFill)" />
       <path d={WAX_BLOB} fill="url(#waxRim)" />
 
-      <ellipse cx="36" cy="30" rx="19" ry="14" fill="rgba(255,170,160,0.16)" transform="rotate(-24 36 30)" />
+      <ellipse cx="36" cy="30" rx="19" ry="14" fill="rgba(243,226,159,0.18)" transform="rotate(-24 36 30)" />
 
       <g
         transform="translate(50,50)"
         fill="none"
-        stroke="rgba(255,206,190,0.5)"
+        stroke="rgba(243,226,159,0.5)"
         strokeWidth="1.15"
         strokeLinecap="round"
       >
@@ -127,7 +127,7 @@ function WaxSeal() {
           x="0"
           y="4"
           textAnchor="middle"
-          fill="rgba(255,215,190,0.9)"
+          fill="rgba(243,226,159,0.95)"
           fontFamily="'Pinyon Script', cursive"
           fontSize="22"
           fontWeight="bold"
