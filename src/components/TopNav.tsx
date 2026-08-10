@@ -5,7 +5,6 @@ const LINKS = [
   { href: '#couple', label: 'Couple' },
   { href: '#details', label: 'Details' },
   { href: '#gallery', label: 'Gallery' },
-  { href: '#rsvp', label: 'RSVP' },
 ]
 
 export default function TopNav() {

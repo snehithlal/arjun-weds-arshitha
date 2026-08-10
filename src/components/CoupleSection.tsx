@@ -260,17 +260,7 @@ export default function CoupleSection() {
         viewport={{ once: true }}
         transition={{ duration: 0.9 }}
       >
-        <p className="section-sub mb-3">With joy in their hearts</p>
-        <h2 className="section-heading-script gold-foil mb-6">The Union of Hearts</h2>
-        
-        <div className="card-glass p-6 sm:p-8 rounded-xl border border-gold/40 shadow-lg mb-10">
-          <p className="font-display italic text-lg sm:text-xl text-ink leading-relaxed mb-4">
-            &ldquo;Our beloved son has found his soulmate, and in this beautiful union of hearts, a lifelong journey of love, trust, and togetherness begins.&rdquo;
-          </p>
-          <p className="font-heading text-xs sm:text-sm tracking-[0.25em] uppercase text-maroon font-medium">
-            With hearts overflowing with love, joy, and gratitude, we warmly invite you to witness and bless the sacred union of
-          </p>
-        </div>
+        <h2 className="section-heading-script gold-foil mb-2">The Union of Hearts</h2>
       </motion.div>
 
       <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-16 md:gap-10 items-start justify-items-center">

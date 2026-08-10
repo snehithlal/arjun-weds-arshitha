@@ -6,7 +6,6 @@ import Countdown from './components/Countdown'
 import CoupleSection from './components/CoupleSection'
 import EventCard from './components/EventCard'
 import Gallery from './components/Gallery'
-import Rsvp from './components/Rsvp'
 import Footer from './components/Footer'
 import BotanicalDivider from './components/BotanicalDivider'
 import AmbientScene from './components/AmbientScene'
@@ -128,7 +127,6 @@ export default function App() {
               </section>
 
               <Gallery />
-              <Rsvp />
               <Footer />
 
               <ScrollProgressTrack />

@@ -8,7 +8,7 @@ export default function Hero() {
   const ref = useRef<HTMLDivElement>(null)
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start start', 'end start'] })
   const y = useTransform(scrollYProgress, [0, 1], [0, -40])
-  const overlayOpacity = useTransform(scrollYProgress, [0, 1], [0.55, 0.78])
+  const overlayOpacity = useTransform(scrollYProgress, [0, 1], [0.35, 0.6])
 
   return (
     <section
@@ -35,15 +35,15 @@ export default function Hero() {
           style={{
             opacity: overlayOpacity,
             background:
-              'radial-gradient(ellipse at center, rgba(42,30,26,0.3) 0%, rgba(42,30,26,0.7) 100%), linear-gradient(180deg, rgba(110,31,43,0.15) 0%, transparent 30%, rgba(42,30,26,0.5) 100%)',
+              'linear-gradient(180deg, rgba(13,59,54,0.55) 0%, rgba(10,25,22,0.25) 45%, rgba(10,25,22,0.65) 100%)',
           }}
         />
       </motion.div>
 
-      <div className="absolute top-6 left-6 opacity-70" aria-hidden>
+      <div className="absolute top-6 left-6 opacity-80" aria-hidden>
         <CornerOrnament />
       </div>
-      <div className="absolute top-6 right-6 opacity-70 scale-x-[-1]" aria-hidden>
+      <div className="absolute top-6 right-6 opacity-80 scale-x-[-1]" aria-hidden>
         <CornerOrnament />
       </div>
 
@@ -54,11 +54,11 @@ export default function Hero() {
         transition={{ duration: 1.2, delay: 0.3 }}
       >
         <motion.p
-          className="font-heading text-[11px] tracking-[0.5em] uppercase text-gold-light mb-8"
+          className="font-heading text-[11px] tracking-[0.5em] uppercase text-gold-light mb-8 font-medium"
           initial={{ opacity: 0, y: 20, letterSpacing: '0.2em' }}
           animate={{ opacity: 1, y: 0, letterSpacing: '0.5em' }}
           transition={{ duration: 1.2, delay: 0.5 }}
-          style={{ textShadow: '0 1px 8px rgba(42,30,26,0.7)' }}
+          style={{ textShadow: '0 2px 10px rgba(0,0,0,0.85), 0 1px 3px rgba(0,0,0,0.9)' }}
         >
           Together with their families
         </motion.p>
@@ -68,7 +68,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30, scale: 0.96 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 1.2, delay: 0.7, ease: [0.22, 1, 0.36, 1] }}
-          style={{ filter: 'drop-shadow(0 4px 18px rgba(110,31,43,0.4))' }}
+          style={{ filter: 'drop-shadow(0 4px 16px rgba(0,0,0,0.85)) drop-shadow(0 2px 4px rgba(0,0,0,0.9))' }}
         >
           Arjun &amp; Arshitha
         </motion.h1>
@@ -87,20 +87,21 @@ export default function Hero() {
         </motion.div>
 
         <motion.p
-          className="font-heading text-sm sm:text-base tracking-[0.42em] uppercase text-ivory/95 mt-4"
+          className="font-heading text-sm sm:text-base tracking-[0.42em] uppercase text-ivory mt-4 font-medium"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 1.2 }}
+          style={{ textShadow: '0 2px 10px rgba(0,0,0,0.85), 0 1px 3px rgba(0,0,0,0.9)' }}
         >
           are getting married
         </motion.p>
 
         <motion.p
-          className="font-display italic text-lg sm:text-xl text-gold-light/90 mt-5 tracking-[0.25em]"
+          className="font-display italic text-lg sm:text-xl text-gold-light mt-5 tracking-[0.25em]"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 1.4 }}
-          style={{ textShadow: '0 1px 8px rgba(42,30,26,0.7)' }}
+          style={{ textShadow: '0 2px 10px rgba(0,0,0,0.85), 0 1px 3px rgba(0,0,0,0.9)' }}
         >
           {primaryEvent.dateDisplay}
         </motion.p>
