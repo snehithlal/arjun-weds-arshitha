@@ -18,20 +18,29 @@ export default function Hero() {
     >
       <motion.div className="absolute inset-0" style={{ y }}>
         {heroPhoto ? (
-          <img
-            src={heroPhoto}
-            alt="Arjun and Arshitha"
-            className="w-full h-full object-cover animate-kenburns"
-            loading="eager"
-            fetchPriority="high"
-            decoding="async"
-            style={{ objectPosition: 'center 4%' }}
-          />
+          <>
+            {/* Ambient blurred backdrop for wide desktop screens */}
+            <img
+              src={heroPhoto}
+              alt=""
+              aria-hidden
+              className="absolute inset-0 w-full h-full object-cover filter blur-2xl scale-110 opacity-50"
+            />
+            {/* Main responsive image */}
+            <img
+              src={heroPhoto}
+              alt="Arjun and Arshitha"
+              className="relative z-10 w-full h-full object-cover md:object-contain object-[center_12%] md:object-center animate-kenburns"
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
+            />
+          </>
         ) : (
           <div className="w-full h-full bg-gradient-to-br from-blush via-cream to-sage/30" />
         )}
         <motion.div
-          className="absolute inset-0"
+          className="absolute inset-0 z-20"
           style={{
             opacity: overlayOpacity,
             background:
