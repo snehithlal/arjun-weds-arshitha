@@ -1,23 +1,18 @@
-import groom from '../assets/images/groom.jpg'
-import bride from '../assets/images/bride.jpg'
-import couple from '../assets/images/couple.jpg'
-import gallery1 from '../assets/images/gallery-1.jpg'
-import gallery2 from '../assets/images/gallery-2.jpg'
-import gallery3 from '../assets/images/gallery-3.jpg'
-import gallery4 from '../assets/images/gallery-4.jpg'
-import gallery5 from '../assets/images/gallery-5.jpg'
-import gallery6 from '../assets/images/gallery-6.jpg'
+// Auto-import all images from src/images/
+const imageModules = import.meta.glob('../images/*.{jpg,jpeg,png,webp,avif}', {
+  eager: true,
+  query: '?url',
+  import: 'default',
+}) as Record<string, string>
 
-export const heroPhoto: string | undefined = couple
-export const groomPhoto: string | undefined = groom
-export const bridePhoto: string | undefined = bride
+export const allImages: string[] = Object.values(imageModules)
 
-export const galleryPhotos: string[] = [
-  couple,
-  gallery1,
-  gallery2,
-  gallery3,
-  gallery4,
-  gallery5,
-  gallery6,
-]
+// Specific photos — fallback to first available image if not found
+const find = (name: string) =>
+  Object.entries(imageModules).find(([k]) => k.includes(name))?.[1] ?? allImages[0]
+
+export const groomPhoto = find('groom')
+export const bridePhoto = find('bride')
+export const heroPhoto = find('couple') ?? find('hero') ?? allImages[0]
+
+export const galleryPhotos: string[] = allImages
