@@ -293,18 +293,6 @@ export default function CoupleSection() {
         />
       </div>
 
-      <motion.div
-        className="text-center mt-14 max-w-2xl mx-auto px-4"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8, delay: 0.3 }}
-      >
-        <p className="font-display italic text-lg sm:text-xl text-ink-soft leading-relaxed">
-          &ldquo;As they promise each other a lifetime of love, your gracious presence and heartfelt blessings will make their special day truly memorable.&rdquo;
-        </p>
-      </motion.div>
-
       <BotanicalDivider className="mt-14" />
     </section>
   )

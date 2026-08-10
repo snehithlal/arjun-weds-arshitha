@@ -25,7 +25,7 @@ export default function Hero() {
             loading="eager"
             fetchPriority="high"
             decoding="async"
-            style={{ objectPosition: 'center 32%' }}
+            style={{ objectPosition: 'center 4%' }}
           />
         ) : (
           <div className="w-full h-full bg-gradient-to-br from-blush via-cream to-sage/30" />
@@ -35,7 +35,7 @@ export default function Hero() {
           style={{
             opacity: overlayOpacity,
             background:
-              'linear-gradient(180deg, rgba(13,59,54,0.55) 0%, rgba(10,25,22,0.25) 45%, rgba(10,25,22,0.65) 100%)',
+              'linear-gradient(180deg, rgba(8,28,24,0.45) 0%, rgba(5,20,18,0.15) 50%, rgba(5,20,18,0.55) 100%)',
           }}
         />
       </motion.div>
@@ -54,21 +54,21 @@ export default function Hero() {
         transition={{ duration: 1.2, delay: 0.3 }}
       >
         <motion.p
-          className="font-heading text-[11px] tracking-[0.5em] uppercase text-gold-light mb-8 font-medium"
+          className="font-heading text-[11px] sm:text-xs tracking-[0.5em] uppercase text-white/90 mb-8 font-medium"
           initial={{ opacity: 0, y: 20, letterSpacing: '0.2em' }}
           animate={{ opacity: 1, y: 0, letterSpacing: '0.5em' }}
           transition={{ duration: 1.2, delay: 0.5 }}
-          style={{ textShadow: '0 2px 10px rgba(0,0,0,0.85), 0 1px 3px rgba(0,0,0,0.9)' }}
+          style={{ textShadow: '0 2px 12px rgba(0,0,0,0.95), 0 1px 4px rgba(0,0,0,0.95)' }}
         >
           Together with their families
         </motion.p>
 
         <motion.h1
-          className="font-script gold-foil text-6xl sm:text-8xl md:text-9xl lg:text-[9.5rem] leading-none mb-6"
+          className="font-script text-white text-6xl sm:text-8xl md:text-9xl lg:text-[9.5rem] leading-none mb-6"
           initial={{ opacity: 0, y: 30, scale: 0.96 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 1.2, delay: 0.7, ease: [0.22, 1, 0.36, 1] }}
-          style={{ filter: 'drop-shadow(0 4px 16px rgba(0,0,0,0.85)) drop-shadow(0 2px 4px rgba(0,0,0,0.9))' }}
+          style={{ filter: 'drop-shadow(0 4px 18px rgba(0,0,0,0.95)) drop-shadow(0 2px 6px rgba(0,0,0,0.95)) drop-shadow(0 0 30px rgba(0,0,0,0.7))' }}
         >
           Arjun &amp; Arshitha
         </motion.h1>
@@ -79,29 +79,29 @@ export default function Hero() {
           animate={{ opacity: 1, scaleX: 1 }}
           transition={{ duration: 1, delay: 1 }}
         >
-          <span className="block h-px w-16 sm:w-24 bg-gradient-to-r from-transparent via-gold-light to-gold-light" />
+          <span className="block h-px w-16 sm:w-24 bg-gradient-to-r from-transparent via-white/80 to-white/80" />
           <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden>
-            <path d="M7 1 L8 6 L13 7 L8 8 L7 13 L6 8 L1 7 L6 6 Z" fill="#E8D29A" opacity="0.9" />
+            <path d="M7 1 L8 6 L13 7 L8 8 L7 13 L6 8 L1 7 L6 6 Z" fill="#FFFFFF" opacity="0.95" />
           </svg>
-          <span className="block h-px w-16 sm:w-24 bg-gradient-to-l from-transparent via-gold-light to-gold-light" />
+          <span className="block h-px w-16 sm:w-24 bg-gradient-to-l from-transparent via-white/80 to-white/80" />
         </motion.div>
 
         <motion.p
-          className="font-heading text-sm sm:text-base tracking-[0.42em] uppercase text-ivory mt-4 font-medium"
+          className="font-heading text-sm sm:text-base tracking-[0.42em] uppercase text-white mt-4 font-medium"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 1.2 }}
-          style={{ textShadow: '0 2px 10px rgba(0,0,0,0.85), 0 1px 3px rgba(0,0,0,0.9)' }}
+          style={{ textShadow: '0 2px 12px rgba(0,0,0,0.95), 0 1px 4px rgba(0,0,0,0.95)' }}
         >
           are getting married
         </motion.p>
 
         <motion.p
-          className="font-display italic text-lg sm:text-xl text-gold-light mt-5 tracking-[0.25em]"
+          className="font-display italic text-lg sm:text-xl text-white/95 mt-5 tracking-[0.25em]"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 1.4 }}
-          style={{ textShadow: '0 2px 10px rgba(0,0,0,0.85), 0 1px 3px rgba(0,0,0,0.9)' }}
+          style={{ textShadow: '0 2px 12px rgba(0,0,0,0.95), 0 1px 4px rgba(0,0,0,0.95)' }}
         >
           {primaryEvent.dateDisplay}
         </motion.p>
