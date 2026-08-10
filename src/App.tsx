@@ -106,7 +106,7 @@ export default function App() {
                     time="4:00 PM – 10:00 PM"
                     venue="Pookulayan House"
                     address="Alavil-Kunnav, Kannur"
-                    mapUrl="https://www.google.com/maps/search/Alavil+Kunnav+Kannur"
+                    mapUrl="https://goo.gl/maps/DMUDyGH8ZrE7GDdQ8?g_st=ac"
                     calEvent={weddingEveEvent}
                   />
 
