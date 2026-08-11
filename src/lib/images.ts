@@ -15,4 +15,7 @@ export const groomPhoto = find('groom')
 export const bridePhoto = find('bride')
 export const heroPhoto = find('couple') ?? find('hero') ?? allImages[0]
 
-export const galleryPhotos: string[] = allImages
+// Gallery photos exclude the cover photo (couple.jpg)
+export const galleryPhotos: string[] = Object.entries(imageModules)
+  .filter(([k]) => !k.includes('couple.'))
+  .map(([, url]) => url)
