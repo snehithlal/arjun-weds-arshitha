@@ -63,7 +63,7 @@ export default function Hero() {
         transition={{ duration: 1.2, delay: 0.3 }}
       >
         <motion.p
-          className="font-heading text-[11px] sm:text-xs tracking-[0.5em] uppercase text-white/90 mb-8 font-medium"
+          className="font-heading text-[11px] sm:text-xs tracking-[0.5em] pl-[0.5em] uppercase text-white/90 mb-8 font-medium"
           initial={{ opacity: 0, y: 20, letterSpacing: '0.2em' }}
           animate={{ opacity: 1, y: 0, letterSpacing: '0.5em' }}
           transition={{ duration: 1.2, delay: 0.5 }}
@@ -96,7 +96,7 @@ export default function Hero() {
         </motion.div>
 
         <motion.p
-          className="font-heading text-sm sm:text-base tracking-[0.42em] uppercase text-white mt-4 font-medium"
+          className="font-heading text-sm sm:text-base tracking-[0.42em] pl-[0.42em] uppercase text-white mt-4 font-medium"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 1.2 }}
@@ -106,7 +106,7 @@ export default function Hero() {
         </motion.p>
 
         <motion.p
-          className="font-display italic text-lg sm:text-xl text-white/95 mt-5 tracking-[0.25em]"
+          className="font-display italic text-lg sm:text-xl text-white/95 mt-5 tracking-[0.25em] pl-[0.25em]"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 1.4 }}

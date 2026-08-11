@@ -283,26 +283,26 @@ function PersonCard({
         />
       </motion.div>
 
-      <div>
-        <p className="section-sub mb-2" style={{ color: "var(--maroon)" }}>
+      <div className="flex flex-col items-center text-center w-full max-w-sm mx-auto px-2">
+        <p className="section-sub mb-2 text-center" style={{ color: "var(--maroon)" }}>
           {role}
         </p>
         <h3
-          className="font-script gold-foil text-5xl mb-3"
+          className="font-script gold-foil text-5xl mb-3 text-center"
           style={{ lineHeight: 1 }}
         >
           {nameDisplay}
         </h3>
-        <p className="font-display italic text-base text-ink-soft leading-relaxed max-w-[280px]">
+        <p className="font-display italic text-base text-ink-soft leading-relaxed max-w-[280px] text-center mx-auto">
           {parents}
         </p>
-        <p className="font-heading text-[11px] text-gold-deep tracking-[0.28em] uppercase mt-3">
+        <p className="font-heading text-[11px] text-gold-deep tracking-[0.24em] pl-[0.24em] uppercase mt-3 text-center mx-auto max-w-[300px]">
           {home}
         </p>
         {contact && (
           <a
             href={`tel:${contact.replace(/[^0-9+]/g, "")}`}
-            className="inline-flex items-center gap-1.5 font-body text-xs text-maroon hover:text-gold-deep mt-2 tracking-wider transition-colors"
+            className="inline-flex items-center justify-center gap-1.5 font-body text-xs text-maroon hover:text-gold-deep mt-2 tracking-wider transition-colors mx-auto"
           >
             <svg
               width="12"
